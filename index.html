@@ -11,27 +11,125 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/camera.png" type="image/x-icon">
 </head>
 
 <body class="font-ubuntu">
-
-    <nav class="px-32 mt-5">
-        <div class="md:flex justify-between">
-            <a href="index.html relative">
-                <img src="./images/assets/top-right.svg" alt="" class="absolute">
-                <h1 class="text-lg font-bold">Kaz Empire</h1>
-            </a>
-            <ul class="flex space-x-5">
-                <li>Home</li>
-                <li>About</li>
-                <li>Gallery</li>
-                <li>Testimonial</li>
-                <li>Contact</li>
-            </ul>
+    <header class="font-poppins font-medium text-base sticky top-0">
+        <nav
+            class="bg-background shadow-lg flex justify-between items-center mx-auto px-8 md:px-14 py-6 lg:px-24 w-full">
+            <div class="relative p-2">
+                <img src="./images/assets/brown-top.svg" alt="" class="absolute top-0 left-0">
+                <a href="index.html" class="">
+                    <h1 class="text-xl font-extrabold">Kaz Empire</h1>
+                </a>
+                <img src="./images/assets/brown-bottom.svg" alt="" class="absolute bottom-0 right-0">
+            </div>
+            <div class="hidden md:flex space-x-12 items-center">
+                <a href="#" class="text-button">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Gallery</a>
+                <a href="#skills">Testimonial</a>
+                <a href="#contact">
+                    <button class="px-7 py-2 bg-button font-bold rounded">
+                        Contact
+                    </button>
+                </a>
+            </div>
+            <!-- Mobile button -->
+            <div class="md:hidden inline">
+                <button class="mobile-menu-button">
+                    <svg class="w-10 h-10 bg-button rounded text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+        </nav>
+        <div class="mobile-menu hidden md:hidden text-white bg-button">
+            <a href="#about" class="block py-2 px-16 rounded text-lg hover:bg-gray-700">About</a>
+            <a href="#projects" class="block py-2 px-16 rounded text-lg hover:bg-gray-700">Gallery</a>
+            <a href="#skills" class="block py-2 px-16 rounded text-lg hover:bg-gray-700">Testimonial</a>
+            <a href="#contact" class="block py-2 px-16 rounded text-sm hover:bg-gray-700">Contact</a>
         </div>
-    </nav>
+    </header>
 
 
+    <main>
+        <section id="home">
+            <div class="grid grid-cols-2 px-32 mt-20">
+                <div>
+                    <div class="mt-32 space-y-4">
+                        <p class="font-semibold text-lg">Welcome,</p>
+                        <h2 class="font-extrabold md:text-5xl">I'm Kaz Empire</h2>
+                        <p class="text-xs pr-5 justified">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Maxime
+                            consequatur
+                            possimus iure enim
+                            voluptas ea quo nisi, aliquid tempora modi ipsum explicabo sed unde quae, quos officia non!
+                        </p>
+                    </div>
+                    <div class="mt-20 pb-24">
+                        <a href="#">
+                            <svg width="24" height="30" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                clip-rule="evenodd">
+                                <path
+                                    d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/camera.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-lightbg relative">
+            <div class="grid grid-cols-2 px-32">
+                <img src="./images/assets/zigzag.svg" alt="" class="absolute w-28 left-12 top-10 ">
+                <div class="">
+                    <div class="p-20">
+                        <img src="./images/img.jpg" alt="" class="w-72 ml-20">
+                    </div>
+                </div>
+                <!-- <div class="bg-button absolute h-60 w-60 top-32"></div> -->
+                <div class="">
+                    <div class="mt-32 space-y-4 pl-10">
+                        <p class="font-semibold text-lg">About me</p>
+                        <h2 class="font-extrabold md:text-5xl">Hello</h2>
+                        <p class="text-sm pr-5 justified">I’m ella adams, am a photographer with 5 years of experience.
+                            I am
+                            known to capture the most important moments in every events as i am a professonal at
+                            producing
+                            premium quality photos in studio settings. I am a CPP certified freelance photographer,
+                            skilled
+                            in portrait photograpghy, lanscapes and weddings. I treasure every moments in life and for
+                            that,
+                            i make them a memorable one.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <script>
+        // mobile menu
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        // mobile menu event listeners
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
 </body>
 
 </html>
