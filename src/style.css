@@ -13,3 +13,7 @@
 .card {
   @apply border-t-8 border-t-button bg-background rounded-lg hover:drop-shadow-2xl hover:shadow-button hover:-translate-y-2 transition ease-in-out delay-150 duration-300 cursor-default;
 }
+
+.input {
+  @apply py-3 px-3 placeholder:text-sm rounded-lg focus:outline-none;
+}

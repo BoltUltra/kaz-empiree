@@ -20,7 +20,7 @@
 </head>
 
 <body class="font-ubuntu scroll-smooth">
-    <header class="font-poppins font-medium text-base sticky top-0">
+    <header class="font-medium text-base sticky top-0">
         <nav
             class="bg-background shadow-lg flex justify-between items-center mx-auto px-8 md:px-14 py-6 lg:px-24 w-full">
             <div class="relative p-2">
@@ -63,8 +63,8 @@
 
 
     <main>
-        <section id="home">
-            <div class="grid grid-cols-2 px-32 mt-20">
+        <section id="home" class="bg-background">
+            <div class="grid grid-cols-2 px-32 pt-20">
                 <div>
                     <div class="mt-32 space-y-4">
                         <p class="font-semibold text-lg">Welcome,</p>
@@ -195,9 +195,9 @@
             </div>
         </section>
 
-        <section class="mt-10">
+        <section class="mt-16">
             <div class="testimonials px-32">
-                <div class="text-center space-y-3 mb-5">
+                <div class="text-center space-y-3 mb-8">
                     <h2 class="font-extrabold md:text-3xl">Happy Clients</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo molestias iusto?</p>
                 </div>
@@ -277,6 +277,53 @@
                 </div>
             </div>
         </section>
+
+        <section class="my-14 bg-lightbg relative">
+            <div class="m-auto text-center py-14 space-y-4">
+                <h3 class="font-bold text-2xl">Do you have any event and need a photographer?</h3>
+                <button class="bg-button px-5 py-3 m-auto rounded-lg text-white">Hire Me</button>
+                <img src="./images/assets/zigzag.svg" alt="" class="absolute w-28 bottom-10 right-10">
+            </div>
+        </section>
+
+        <section class="px-44 md:mt-24">
+            <div class="bg-lightbg p-10 rounded-lg text-center">
+                <h2 class="font-bold text-2xl text-center mb-14">Get In Touch</h2>
+                <form action="" class="">
+                    <div class="grid grid-cols-2 gap-x-4 mb-4">
+                        <input type="text" name="text" class="input" placeholder="Input your name">
+                        <input type="email" name="email" class="input" placeholder="Input your email">
+                    </div>
+                    <div class="grid grid-cols-2 gap-x-4 mb-4">
+                        <input type="phone" name="phone" class="input" placeholder="Input your telephone">
+                        <select name="option" id="" class="input">
+                            <option value="" class="" selected>Select a service</option>
+                            <option value="" class="">Indoor</option>
+                            <option value="" class="">Outdoor</option>
+                            <option value="" class="">Wedding</option>
+                            <option value="" class="">Birthday</option>
+                        </select>
+                    </div>
+                    <textarea name="textarea" id="" rows="10" class="w-full input"
+                        placeholder="Your message..."></textarea>
+                    <button type="submit"
+                        class="bg-button text-base text-white py-3 px-5 m-auto rounded-lg text-center mt-5">Send
+                        Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="mt-14">
+            <div>
+                <div class="relative p-2 m-auto">
+                    <img src="./images/assets/brown-top.svg" alt="" class="absolute top-0 left-0">
+                    <a href="index.html" class="">
+                        <h1 class="text-xl font-extrabold">Kaz Empire</h1>
+                    </a>
+                    <img src="./images/assets/brown-bottom.svg" alt="" class="absolute bottom-0 right-0">
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -301,8 +348,6 @@
     <script>
         AOS.init();
     </script>
-
-    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
 </body>
 
 </html>
