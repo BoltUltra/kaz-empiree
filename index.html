@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaz Empire</title>
+
+
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./dist/app.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/camera.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/caed22f575.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="font-ubuntu">
+<body class="font-ubuntu scroll-smooth">
     <header class="font-poppins font-medium text-base sticky top-0">
         <nav
             class="bg-background shadow-lg flex justify-between items-center mx-auto px-8 md:px-14 py-6 lg:px-24 w-full">
@@ -72,12 +77,8 @@
                         </p>
                     </div>
                     <div class="mt-20 pb-24">
-                        <a href="#">
-                            <svg width="24" height="30" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                clip-rule="evenodd">
-                                <path
-                                    d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
-                            </svg></a>
+                        <a href="#about">
+                            <i class="fa-solid fa-angles-down fa-bounce fa-2x"></i></a>
                     </div>
                 </div>
                 <div>
@@ -86,8 +87,8 @@
             </div>
         </section>
 
-        <section class="bg-lightbg relative">
-            <div class="grid grid-cols-2 px-32">
+        <section class="bg-lightbg relative" id="about">
+            <div data-aos="fade-up" class="grid grid-cols-2 px-32">
                 <img src="./images/assets/zigzag.svg" alt="" class="absolute w-28 left-12 top-10 ">
                 <div class="">
                     <div class="p-20">
@@ -99,7 +100,8 @@
                     <div class="mt-32 space-y-4 pl-10">
                         <p class="font-semibold text-lg">About me</p>
                         <h2 class="font-extrabold md:text-5xl">Hello</h2>
-                        <p class="text-sm pr-5 justified">I’m ella adams, am a photographer with 5 years of experience.
+                        <p class="text-sm pr-5 justified md:pb-12">I’m ella adams, am a photographer with 5 years of
+                            experience.
                             I am
                             known to capture the most important moments in every events as i am a professonal at
                             producing
@@ -116,17 +118,17 @@
         </section>
 
         <section class="mt-20">
-            <div>
-                <div class="text-center">
+            <div data-aos="fade-left">
+                <div class="text-center space-y-3">
                     <h2 class="font-extrabold md:text-3xl">My Work</h2>
                     <p>Browse some of Vital’s client photography portfolio</p>
                 </div>
-                <div class="m-auto">
-                    <div class="bg-lightbg space-x-5 rounded-full text-center w-1/4 m-auto py-3">
-                        <a href="" onclick="portfolio(event, 'events')"
-                            class="portfolio-Link bg-button rounded-full py-1 px-2" id="defaultOpen">Events</a>
-                        <a href="" onclick="portfolio(event, 'portrait')" class="portfolio-Link">Portraits</a>
-                        <a href="" onclick="portfolio(event, 'wedding')" class="portfolio-Link">Wedding</a>
+                <div class="m-auto mt-5">
+                    <div class="bg-lightbg space-x-5 rounded-full text-center w-2/5 m-auto py-3">
+                        <button onclick="portfolio(event, 'events')" class="portfolio-Link active"
+                            id="defaultOpen">Events</button>
+                        <button onclick="portfolio(event, 'portrait')" class="portfolio-Link active">Portraits</button>
+                        <button onclick="portfolio(event, 'wedding')" class="portfolio-Link active">Wedding</button>
                     </div>
                 </div>
                 <div class="grid grid-cols-4 px-44 py-12 gap-x-4 gap-y-4 md:hidden portfolio-Content" id="events">
@@ -141,7 +143,8 @@
                     <div><img src="./images/portrait/igbo-girl.JPG" alt=""></div>
                 </div>
 
-                <div class="grid grid-cols-4 px-44 py-12 gap-x-4 gap-y-4 md:hidden portfolio-Content" id="portrait">
+                <div data-aos="fade-right"
+                    class="grid grid-cols-4 px-44 py-12 gap-x-4 gap-y-4 md:hidden portfolio-Content" id="portrait">
                     <div><img src="./images/portrait/bw-1.JPG" alt=""></div>
                     <div><img src="./images/portrait/ogechi.JPG" alt="" class="row-span-2"></div>
                     <div><img src="./images/portrait/lady1.jpg" alt=""></div>
@@ -166,6 +169,40 @@
                 </div>
             </div>
         </section>
+
+        <section class="bg-lightbg py-5 my-5">
+            <div class="grid grid-cols-4 text-center px-60 text-button">
+                <div>
+                    <i class="fa-regular fa-face-smile fa-2x"></i>
+                    <h2 class="font-extrabold text-lg mt-4 mb-0">200+</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-rocket fa-2x"></i>
+                    <h2 class="font-extrabold text-lg mt-4 mb-0">300+</h2>
+                    <p>Projects</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-thumbs-up fa-2x"></i>
+                    <h2 class="font-extrabold text-lg mt-4 mb-0">100k</h2>
+                    <p>Likes</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-award fa-2x"></i>
+                    <h2 class="font-extrabold text-lg mt-4 mb-0">10</h2>
+                    <p>Awards</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="testimonials">
+            <div class="grid grid-cols-3">
+                <div class="border-t-8 border-t-button">
+                    
+
+                </div>
+            </div>
+        </div>
     </main>
 
 
@@ -185,6 +222,13 @@
     </script>
 
     <script src="./index.js"></script>
+    <!-- AOS -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
 </body>
 
 </html>

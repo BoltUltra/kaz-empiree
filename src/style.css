@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  @apply bg-button rounded-full py-1 px-4 text-white;
+}
+
+.hover {
+  @apply hover:bg-button hover:rounded-full hover:py-1 hover:px-4 hover:text-white;
+}

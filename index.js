@@ -6,6 +6,7 @@ function portfolio(evt, portfolioName) {
     portfolioContent[i].style.display = "none";
   }
 
+  //   Gets all the link with the class of "active" and remove it
   portfolioLink = document.getElementsByClassName("portfolio-Link");
   for (i = 0; i < portfolioLink.length; i++) {
     portfolioLink[i].className = portfolioLink[i].className.replace(
