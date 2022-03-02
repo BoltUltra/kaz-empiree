@@ -20,9 +20,9 @@
 </head>
 
 <body class="font-ubuntu scroll-smooth">
-    <header class="font-medium text-base sticky top-0">
+    <header class="font-medium sm:text-sm md:text-base sticky top-0">
         <nav
-            class="bg-background shadow-lg flex justify-between items-center mx-auto px-8 md:px-14 py-6 lg:px-24 w-full">
+            class="bg-background shadow-lg flex justify-between items-center mx-auto px-8 sm:px-8 md:px-14 py-6 lg:px-24 w-full">
             <div class="relative p-2">
                 <img src="./images/assets/brown-top.svg" alt="" class="absolute top-0 left-0">
                 <a href="index.html" class="">
@@ -30,7 +30,7 @@
                 </a>
                 <img src="./images/assets/brown-bottom.svg" alt="" class="absolute bottom-0 right-0">
             </div>
-            <div class="hidden md:flex space-x-12 items-center">
+            <div class="hidden md:flex space-x-8 items-center">
                 <a href="#" class="text-button">Home</a>
                 <a href="#about">About</a>
                 <a href="#gallery">Gallery</a>
@@ -64,43 +64,50 @@
 
     <main>
         <section id="home" class="bg-background">
-            <div class="grid grid-cols-2 px-32 pt-20">
+            <div class="grid md:grid-cols-2 sm:px-5 md:px-10 lg:px-32 pt-20">
                 <div>
-                    <div class="mt-32 space-y-4">
+                    <div class="sm:hidden md:mt-14 lg:mt-32 md:inline-block space-y-4">
                         <p class="font-semibold text-lg">Welcome,</p>
-                        <h2 class="font-extrabold md:text-5xl">I'm Kaz Empire</h2>
-                        <p class="text-xs pr-5 justified">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <h2 class="font-extrabold sm: md:text-3xl lg:text-5xl">I'm Kaz Empire</h2>
+                        <p class="text-xs pr-5 justified md:pb-7">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
                             Maxime
                             consequatur
                             possimus iure enim
                             voluptas ea quo nisi, aliquid tempora modi ipsum explicabo sed unde quae, quos officia non!
                         </p>
                     </div>
-                    <div class="mt-20 pb-24">
+                    <div class="mt-72 md:pb-12 lg:pb-24 sm:hidden md:inline">
                         <a href="#about">
                             <i class="fa-solid fa-angles-down fa-bounce fa-2x"></i></a>
                     </div>
                 </div>
-                <div>
+                <div class="md:pb-10">
                     <img src="./images/camera.png" alt="">
                 </div>
             </div>
         </section>
 
         <section id="about" class="bg-lightbg relative">
-            <div data-aos="fade-up" class="grid grid-cols-2 px-32">
-                <img src="./images/assets/zigzag.svg" alt="" class="absolute w-28 left-12 top-10 ">
-                <div class="">
-                    <div class="p-20">
-                        <img src="./images/img.jpg" alt="" class="w-72 ml-20">
+            <div data-aos="fade-up" class="grid md:grid-cols-2 sm:px-2 md:px-10 lg:px-32">
+                <img src="./images/assets/zigzag.svg" alt=""
+                    class="absolute w-20 md:w-28 left-5 md:left-12 top-5 md:top-10 ">
+                <div class="sm:hidden md:inline">
+                    <div class="sm:p-2 md:p-10 lg:p-20">
+                        <img src="./images/img.jpg" alt=""
+                            class="w-72 sm:ml-4 md:ml-7 lg:ml-20 sm:mt-4 md:mt-16 lg:mt-0">
                     </div>
                 </div>
-                <!-- <div class="bg-button absolute h-60 w-60 top-32"></div> -->
                 <div class="">
-                    <div class="mt-32 space-y-4 pl-10">
-                        <p class="font-semibold text-lg">About me</p>
-                        <h2 class="font-extrabold md:text-5xl">Hello</h2>
-                        <p class="text-sm pr-5 justified md:pb-12">I’m ella adams, am a photographer with 5 years of
+                    <div
+                        class="sm:mt-10 md:mt-32 sm: md:space-y-3 sm:text-center lg:space-y-4 sm:pl-0 md:pl-10 md:text-left">
+                        <p class="font-semibold sm:text-lg md:text-base lg:text-lg">About me</p>
+                        <h2 class="font-extrabold sm:text-3xl md:text4xl lg:text-5xl">Hello</h2>
+                        <p
+                            class="sm:text-xs md:text-xs lg:text-sm md:pr-5 justified sm:px-4 md:px-0 sm:pb-10 md:pb-10 lg:pb-12">
+                            I’m Kazeem, a
+                            photographer with 5
+                            years of
                             experience.
                             I am
                             known to capture the most important moments in every events as i am a professonal at
@@ -113,25 +120,28 @@
                         </p>
                     </div>
                 </div>
-                <img src="./images/assets/zigzag.svg" alt="" class="absolute w-28 right-12 bottom-10 ">
+                <img src="./images/assets/zigzag.svg" alt=""
+                    class="absolute w-20 md:w-28 right-6 md:right-12 bottom-2 md:bottom-10 ">
             </div>
         </section>
 
-        <section id="gallery" class="mt-20">
+        <section id="gallery" class="sm:mt-5 md:mt-14 lg:mt-20">
             <div data-aos="fade-left">
                 <div class="text-center space-y-3">
-                    <h2 class="font-extrabold md:text-3xl">My Work</h2>
+                    <h2 class="font-extrabold text-2xl md:text-3xl">My Work</h2>
                     <p>Browse some of Vital’s client photography portfolio</p>
                 </div>
                 <div class="m-auto mt-5">
-                    <div class="bg-lightbg space-x-5 rounded-full text-center w-2/5 m-auto py-3">
+                    <div
+                        class="bg-lightbg space-x-5 rounded-full text-center sm:text-xs md:text-base w-4/5 md:w-2/5 m-auto px-2 py-2 md:py-3">
                         <button onclick="portfolio(event, 'events')" class="portfolio-Link active"
                             id="defaultOpen">Events</button>
                         <button onclick="portfolio(event, 'portrait')" class="portfolio-Link active">Portraits</button>
                         <button onclick="portfolio(event, 'wedding')" class="portfolio-Link active">Wedding</button>
                     </div>
                 </div>
-                <div class="grid grid-cols-4 px-44 py-12 gap-x-4 gap-y-4 md:hidden portfolio-Content" id="events">
+                <div class="grid md:grid-cols-4 sm:px-10 md:px-24 lg:px-44 py-12 gap-x-4 gap-y-4 md:hidden portfolio-Content"
+                    id="events">
                     <div><img src="./images/portrait/ogechi.JPG" alt="" class="row-span-2"></div>
                     <div><img src="./images/portrait/bw-1.JPG" alt=""></div>
                     <div><img src="./images/portrait/beauty.JPG" alt=""></div>
@@ -144,7 +154,8 @@
                 </div>
 
                 <div data-aos="fade-right"
-                    class="grid grid-cols-4 px-44 py-12 gap-x-4 gap-y-4 md:hidden portfolio-Content" id="portrait">
+                    class="grid md:grid-cols-4 sm:px-10 md:px-24 lg:px-44 py-12 gap-x-4 gap-y-4 md:hidden portfolio-Content"
+                    id="portrait">
                     <div><img src="./images/portrait/bw-1.JPG" alt=""></div>
                     <div><img src="./images/portrait/ogechi.JPG" alt="" class="row-span-2"></div>
                     <div><img src="./images/portrait/lady1.jpg" alt=""></div>
@@ -156,7 +167,8 @@
                     <div><img src="./images/portrait/igbo-girl.JPG" alt=""></div>
                 </div>
 
-                <div class="grid grid-cols-4 px-44 py-12 gap-x-4 gap-y-4 md:hidden portfolio-Content" id="wedding">
+                <div class="grid md:grid-cols-4 sm:px-10 md:px-24 lg:px-44 py-12 gap-x-4 gap-y-4 md:hidden portfolio-Content"
+                    id="wedding">
                     <div><img src="./images/portrait/ogechi.JPG" alt="" class="row-span-2"></div>
                     <div><img src="./images/portrait/bw-1.JPG" alt=""></div>
                     <div><img src="./images/portrait/beauty.JPG" alt=""></div>
@@ -170,45 +182,46 @@
             </div>
         </section>
 
-        <section class="bg-lightbg py-5 my-5">
-            <div class="grid grid-cols-4 text-center px-60 text-button">
-                <div>
+        <section class="bg-lightbg py-7 md:py-5 my-5">
+            <div class="grid md:grid-cols-4 text-center sm:px-10 md:px-24 lg:px-60  text-button">
+                <div class="sm:mb-7 md:mb-0">
                     <i class="fa-regular fa-face-smile fa-2x"></i>
-                    <h2 class="font-extrabold text-lg mt-4 mb-0">200+</h2>
+                    <h2 class="font-extrabold text-lg mt-2 md:mt-4 mb-0">200+</h2>
                     <p>Happy Clients</p>
                 </div>
-                <div>
+                <div class="sm:mb-7 md:mb-0">
                     <i class="fa-solid fa-rocket fa-2x"></i>
-                    <h2 class="font-extrabold text-lg mt-4 mb-0">300+</h2>
+                    <h2 class="font-extrabold text-lg mt-2 md:mt-4 mb-0">300+</h2>
                     <p>Projects</p>
                 </div>
-                <div>
+                <div class="sm:mb-7 md:mb-0">
                     <i class="fa-regular fa-thumbs-up fa-2x"></i>
-                    <h2 class="font-extrabold text-lg mt-4 mb-0">100k</h2>
+                    <h2 class="font-extrabold text-lg mt-2 md:mt-4 mb-0">100k</h2>
                     <p>Likes</p>
                 </div>
-                <div>
+                <div class="sm:mb-7 md:mb-0">
                     <i class="fa-solid fa-award fa-2x"></i>
-                    <h2 class="font-extrabold text-lg mt-4 mb-0">10</h2>
+                    <h2 class="font-extrabold text-lg mt-2 md:mt-4 mb-0">10</h2>
                     <p>Awards</p>
                 </div>
             </div>
         </section>
 
         <section id="testimonial" class="mt-16">
-            <div class="testimonials px-32">
+            <div class="testimonials sm:px-10 md:px-20 lg:px-32">
                 <div class="text-center space-y-3 mb-8">
-                    <h2 class="font-extrabold md:text-3xl">Happy Clients</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo molestias iusto?</p>
+                    <h2 class="font-extrabold sm:text-2xl md:text-3xl">Happy Clients</h2>
+                    <p class="text-xs md:text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Repudiandae nemo molestias iusto?</p>
                 </div>
-                <div class="grid grid-cols-4 gap-x-4">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4">
                     <div class="card">
                         <div class="p-3">
                             <div class="flex items-center">
                                 <img src="./images/testimonials/mayowa.jpg" alt="" class="rounded-full w-16 h-16">
                                 <div class="ml-4">
                                     <h2 class="font-bold text-lg">Lorem, ipsum.</h2>
-                                    <p class="text-sm">Lorem ipsum dolor sit.</p>
+                                    <p class="text-xs md:text-sm">Lorem ipsum dolor sit.</p>
                                 </div>
                             </div>
                             <p class="text-justify text-sm mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -226,7 +239,7 @@
                                 <img src="./images/testimonials/client1.jpg" alt="" class="rounded-full w-16 h-16">
                                 <div class="ml-4">
                                     <h2 class="font-bold text-lg">Lorem, ipsum.</h2>
-                                    <p class="text-sm">Lorem ipsum dolor sit.</p>
+                                    <p class="text-xs md:text-sm">Lorem ipsum dolor sit.</p>
                                 </div>
                             </div>
                             <p class="text-justify text-sm mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -244,7 +257,7 @@
                                 <img src="./images/testimonials/client2.jpg" alt="" class="rounded-full w-16 h-16">
                                 <div class="ml-4">
                                     <h2 class="font-bold text-lg">Lorem, ipsum.</h2>
-                                    <p class="text-sm">Lorem ipsum dolor sit.</p>
+                                    <p class="text-xs md:text-sm">Lorem ipsum dolor sit.</p>
                                 </div>
                             </div>
                             <p class="text-justify text-sm mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -262,7 +275,7 @@
                                 <img src="./images/testimonials/meerah.jpg" alt="" class="rounded-full w-16 h-16">
                                 <div class="ml-4">
                                     <h2 class="font-bold text-lg">Lorem, ipsum.</h2>
-                                    <p class="text-sm">Lorem ipsum dolor sit.</p>
+                                    <p class="text-xs md:text-sm">Lorem ipsum dolor sit.</p>
                                 </div>
                             </div>
                             <p class="text-justify text-sm mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -279,22 +292,23 @@
         </section>
 
         <section class="my-14 bg-lightbg relative">
-            <div class="m-auto text-center py-14 space-y-4">
-                <h3 class="font-bold text-2xl">Do you have any event and need a photographer?</h3>
+            <div class="m-auto text-center px-10 md:px-0 py-14 space-y-4">
+                <h3 class="font-bold text-xl md:text-2xl">Do you have any event and need a photographer?</h3>
                 <button class="bg-button px-5 py-3 m-auto rounded-lg text-white">Hire Me</button>
-                <img src="./images/assets/zigzag.svg" alt="" class="absolute w-28 bottom-10 right-10">
+                <img src="./images/assets/zigzag.svg" alt=""
+                    class="absolute w-20 md:w-28 bottom-5 md:bottom-10 right-10">
             </div>
         </section>
 
-        <section id="contact" class="px-44 md:mt-24">
-            <div class="bg-lightbg p-10 rounded-lg text-center">
+        <section id="contact" class="sm:px-2 md:px-16 lg:px-44 md:mt-24">
+            <div class="bg-lightbg p-4 md:p-10 rounded-lg text-center">
                 <h2 class="font-bold text-2xl text-center mb-14">Get In Touch</h2>
                 <form action="https://formsubmit.co/mayowa77@yahoo.com" method="POST">
-                    <div class="grid grid-cols-2 gap-x-4 mb-4">
+                    <div class="grid md:grid-cols-2 gap-x-4 gap-y-4 mb-4">
                         <input type="text" name="text" class="input" placeholder="Input your name">
                         <input type="email" name="email" class="input" placeholder="Input your email">
                     </div>
-                    <div class="grid grid-cols-2 gap-x-4 mb-4">
+                    <div class="grid md:grid-cols-2 gap-x-4 gap-y-4 mb-4">
                         <input type="phone" name="phone" class="input" placeholder="Input your telephone">
                         <input type="phone" name="text" class="input"
                             placeholder="Please input the kind of service you want!">
@@ -309,15 +323,15 @@
         </section>
 
         <section class="my-14">
-            <div class="relative p-2 m-auto w-[10%] text-center">
+            <div class="relative p-2 m-auto sm:w-[35%] md:w-[20%] lg:w-[10%] text-center">
                 <img src="./images/assets/brown-top.svg" alt="" class="absolute top-0 left-0">
                 <a href="index.html" class="">
-                    <h1 class="text-xl font-extrabold">Kaz Empire</h1>
+                    <h1 class="text-lg md:text-xl font-extrabold">Kaz Empire</h1>
                 </a>
                 <img src="./images/assets/brown-bottom.svg" alt="" class="absolute bottom-0 right-0">
             </div>
 
-            <div class="text-button space-x-8 text-center my-10">
+            <div class="text-button space-x-4 md:space-x-8 text-center my-10">
                 <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
                 <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
                 <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
@@ -326,7 +340,7 @@
         </section>
     </main>
 
-    <footer class="bg-button py-4 text-center text-white">
+    <footer class="bg-button py-4 text-xs md:text-base text-center text-white">
         <p>Copyright Kaz Empire. All Rights Reserved.</p>
     </footer>
 
